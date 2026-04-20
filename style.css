@@ -1,0 +1,38 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+	max-width: 1440px;
+}
+
+.hero-img {
+	max-width: 1440px;
+	width: 1440px;
+	height: 300px;
+	object-fit: cover;
+}
+
+#restaurant-description {
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 3px solid white;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+
+@media (max-width: 1440px) {
+	.hero-img {
+		width: 100%;
+	}
+}
