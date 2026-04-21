@@ -35,7 +35,7 @@
       href="./styles/footer.css"
     />
   </head>
-  <body>
+  <body onload="init()">
     <header>
       <a href="/index.html">
         <img
@@ -50,18 +50,25 @@
       />
     </header>
     <main>
-      <section id="restaurant-description">
-        <img
-          src="./assets/img/hero.png"
-          alt="Image of fried chicken menu"
-          class="hero-img"
-        />
-        <img
-          class="logo"
-          src="./assets/img/Logo_01.png"
-        />
+      <section id="restaurant-header">
+        <div class="hero-wrapper">
+          <img
+            src="./assets/img/hero.png"
+            class="hero-img"
+            alt="..."
+          />
+          <img
+            src="./assets/img/logo_restaurant.png"
+            class="logo"
+            alt="..."
+          />
+        </div>
+        <div
+          class="restaurant-description"
+          id="restaurant-description"
+        ></div>
       </section>
     </main>
-    <footer>test</footer>
+    <footer></footer>
   </body>
 </html>
