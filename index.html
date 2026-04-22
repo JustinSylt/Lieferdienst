@@ -1,89 +1,109 @@
 <!doctype html>
 <html lang="de">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Lieferdienst</title>
-		<script src="./scripts/db.js"></script>
-		<script src="./scripts/template.js"></script>
-		<script src="./script.js"></script>
-		<link
-			rel="shortcut icon"
-			href="./assets/icons/home_icon.png"
-			type="image/x-icon" />
-		<link
-			rel="stylesheet"
-			href="./styles/assets.css" />
-		<link
-			rel="stylesheet"
-			href="./styles/standard.css" />
-		<link
-			rel="stylesheet"
-			href="./style.css" />
-		<link
-			rel="stylesheet"
-			href="./styles/fonts.css" />
-		<link
-			rel="stylesheet"
-			href="./styles/header.css" />
-		<link
-			rel="stylesheet"
-			href="./styles/footer.css" />
-		<link
-			rel="stylesheet"
-			href="./styles/item_card.css" />
-	</head>
-	<body onload="init()">
-		<header>
-			<a href="/index.html">
-				<img
-					src="./assets/img/Logo_02.png"
-					alt="header logo bestell app"
-					class="header-logo"
-			/></a>
-			<img
-				src="./assets/icons/burger_menu_icon.png"
-				alt="header logo bestell app"
-				class="burger-menu" />
-		</header>
-		<main>
-			<section id="restaurant-header">
-				<div class="hero-wrapper">
-					<img
-						src="./assets/img/hero.png"
-						class="hero-img"
-						alt="..." />
-					<img
-						src="./assets/img/logo_restaurant.png"
-						class="logo"
-						alt="..." />
-				</div>
-				<div
-					class="restaurant-description"
-					id="restaurant-description"></div>
-			</section>
-			<section
-				id="chicken-slider"
-				class="chicken-slider"></section>
-		</main>
-		<footer class="footer">
-			<a
-				href="#"
-				class="link"
-				>&copy; 2026 J.F.C.</a
-			>
-			<a
-				href="#"
-				class="link"
-				>Imprint</a
-			>
-			<a
-				href="#"
-				class="link"
-				>Cookie Preferences</a
-			>
-		</footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Lieferdienst</title>
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/home_icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/assets.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/standard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/footer.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/item_card.css"
+    />
+  </head>
+  <body onload="init()">
+    <header>
+      <a href="/index.html">
+        <img
+          src="./assets/img/Logo_02.png"
+          alt="header logo bestell app"
+          class="header-logo"
+      /></a>
+      <img
+        src="./assets/icons/burger_menu_icon.png"
+        alt="header logo bestell app"
+        class="burger-menu"
+      />
+    </header>
+    <main>
+      <section id="restaurant-header">
+        <div class="hero-wrapper">
+          <img
+            src="./assets/img/hero.png"
+            class="hero-img"
+            alt="..."
+          />
+          <img
+            src="./assets/img/logo_restaurant.png"
+            class="logo"
+            alt="..."
+          />
+        </div>
+        <div
+          class="restaurant-description"
+          id="restaurant-description"
+        ></div>
+      </section>
+      <section
+        id="chicken-slider"
+        class="chicken-slider"
+      >
+        <div class="chicken-slider-header"><h2>Chicken Slider</h2></div>
+        <div
+          class="chicken-slider-container"
+          id="chicken-slider-container"
+        ></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a
+        href="#"
+        class="link"
+        >&copy; 2026 J.F.C.</a
+      >
+      <a
+        href="#"
+        class="link"
+        >Imprint</a
+      >
+      <a
+        href="#"
+        class="link"
+        >Cookie Preferences</a
+      >
+    </footer>
+  </body>
 </html>

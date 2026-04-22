@@ -1,7 +1,7 @@
 // init function that calls render functions
 function init() {
   renderRestaurantDescription();
-  //   renderChickenSliders();
+  renderChickenSliders();
 }
 
 // constants
@@ -10,17 +10,17 @@ const BUCKETS_AND_BOXES_ARR = restaurantJFC.menu['Buckets & Boxes'];
 const SIDES_AND_DIPS_ARR = restaurantJFC.menu['Sides & Dips'];
 
 // render Chicken Sliders section
-// function renderChickenSliders() {
-// 	let chickenSliderRef = document.getElementById('chicken-slider');
-// 	for (let i = 0; i < CHICKEN_SLIDER_ARR.length; i++) {
-// 		let itemCard = renderItemCardTemplatete(
-// 			CHICKEN_SLIDER_ARR[i].title,
-// 			CHICKEN_SLIDER_ARR[i].description,
-// 			CHICKEN_SLIDER_ARR[i].price,
-// 		);
-// 		chickenSliderRef.innerHTML += itemCard;
-// 	}
-// }
+function renderChickenSliders() {
+  let chickenSliderRef = document.getElementById('chicken-slider-container');
+  for (let i = 0; i < CHICKEN_SLIDER_ARR.length; i++) {
+    let itemCard = renderItemCardTemplatete(
+      CHICKEN_SLIDER_ARR[i].title,
+      CHICKEN_SLIDER_ARR[i].description,
+      CHICKEN_SLIDER_ARR[i].price,
+    );
+    chickenSliderRef.innerHTML += itemCard;
+  }
+}
 
 // render Buckets & Boxes section
 function renderBucketsAndBoxes() {}
