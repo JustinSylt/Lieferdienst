@@ -1,125 +1,129 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>J.F.C</title>
-    <script src="./scripts/db.js"></script>
-    <script src="./scripts/template.js"></script>
-    <script src="./script.js"></script>
-    <link
-      rel="stylesheet"
-      href="./styles/variable.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/basket.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/chicken_slider.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/fonts.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/buttons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/footer.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/header.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/item_card.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/standard.css"
-    />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
-  </head>
-  <body onload="init()">
-    <header>
-      <a href="#">
-        <img
-          src="./assets/img/Logo_02.png"
-          alt="restaurant logo"
-          class="header-logo"
-      /></a>
-      <img
-        src="./assets/icons/burger_menu_icon.png"
-        alt="burger menu icon"
-        class="header-burger-menu"
-      />
-    </header>
-    <main>
-      <section class="hero-section">
-        <div class="hero-media">
-          <img
-            class="hero-img"
-            src="./assets/img/hero.png"
-          />
-          <img
-            class="logo"
-            src="./assets/img/logo_restaurant.png"
-          />
-        </div>
-        <div class="hero-description">
-          <h1>J.F.C. - Justin's Fried Chicken</h1>
-          <p>The best Fried Chicken all over germany!</p>
-        </div>
-      </section>
-      <section class="main-section">
-        <div class="menu-section">
-          <div class="divider">
-            <img
-              src="./assets/img/Chicken_Slider.png"
-              alt="Chicken Slider img"
-              class="divider-logo"
-            />
-            <h2 class="divider-text">Chicken Slider</h2>
-          </div>
-          <div
-            class="chicken-slider"
-            id="chicken-slider"
-          ></div>
-        </div>
-        <div class="basket-section">
-          <div class="basket">
-            <h2>Basket</h2>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <a
-        href="#"
-        class="footer-link"
-        >&copy; 2026 J.F.C.</a
-      >
-      <a
-        href="#"
-        class="footer-link"
-        >Imprint</a
-      >
-      <a
-        href="#"
-        class="footer-link"
-        >Cookie Preferences</a
-      >
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>J.F.C</title>
+		<script src="./scripts/db.js"></script>
+		<script src="./scripts/template.js"></script>
+		<script src="./script.js"></script>
+		<link
+			rel="stylesheet"
+			href="./styles/variable.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/basket.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/chicken_slider.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/buttons.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/footer.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/header.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/item_card.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/standard.css" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body onload="init()">
+		<header>
+			<a href="#">
+				<img
+					src="./assets/img/Logo_02.png"
+					alt="restaurant logo"
+					class="header-logo"
+			/></a>
+			<img
+				src="./assets/icons/burger_menu_icon.png"
+				alt="burger menu icon"
+				class="header-burger-menu" />
+		</header>
+		<main>
+			<section class="hero-section">
+				<div class="hero-media">
+					<img
+						class="hero-img"
+						src="./assets/img/hero.png" />
+					<img
+						class="logo"
+						src="./assets/img/logo_restaurant.png" />
+				</div>
+				<div class="hero-description">
+					<h1>J.F.C. - Justin's Fried Chicken</h1>
+					<p>The best Fried Chicken all over germany!</p>
+				</div>
+			</section>
+			<section class="main-section">
+				<div class="menu-section">
+					<div class="divider">
+						<img
+							src="./assets/img/Chicken_Slider.png"
+							alt="Chicken Slider img"
+							class="divider-logo" />
+						<h2 class="divider-text">Chicken Slider</h2>
+					</div>
+					<div
+						class="category-section"
+						id="chicken-slider"></div>
+					<div class="divider">
+						<img
+							src="./assets/img/Buckets_and_Boxes.png"
+							alt="Bucket and Boxes image"
+							class="divider-logo" />
+						<h2 class="divider-text">Buckets and Boxes</h2>
+					</div>
+					<div
+						class="category-section"
+						id="buckets-and-boxes"></div>
+					<div class="divider">
+						<img
+							src="./assets/img/Sides_and_Dips.png"
+							alt="Sides and Dips image"
+							class="divider-logo" />
+						<h2 class="divider-text">Sides and Dips</h2>
+					</div>
+					<div
+						class="category-section"
+						id="sides-and-dips"></div>
+				</div>
+				<div class="basket-section">
+					<div class="basket">
+						<h2>Basket</h2>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<a
+				href="#"
+				class="footer-link"
+				>&copy; 2026 J.F.C.</a
+			>
+			<a
+				href="#"
+				class="footer-link"
+				>Imprint</a
+			>
+			<a
+				href="#"
+				class="footer-link"
+				>Cookie Preferences</a
+			>
+		</footer>
+	</body>
 </html>
