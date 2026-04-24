@@ -1,0 +1,9 @@
+:root {
+  --bg-color: #e76c1f;
+  --basket-bg: #363534;
+  --basket-text: #fdeadc;
+  --item-card-bg: #fdeadc;
+  --item-card-text: #363534;
+  --item-card-btn: #ffffff;
+  --item-card-btn-hover: #e76c1f;
+}

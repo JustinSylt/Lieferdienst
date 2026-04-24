@@ -1,23 +1,21 @@
 header {
-  background-color: #e76c1f;
-  height: 64px;
   display: flex;
+  height: 8vh;
+  background-color: var(--bg-color);
+  padding: 0px 256px;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 256px;
 }
 
 .header-logo {
-  height: 32px;
+  height: 4vh;
 }
 
-.burger-menu {
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
+.header-burger-menu {
+  height: 5vh;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   header {
     padding: 0px 128px;
   }
@@ -26,5 +24,11 @@ header {
 @media (max-width: 600px) {
   header {
     padding: 0px 64px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 0px 32px;
   }
 }

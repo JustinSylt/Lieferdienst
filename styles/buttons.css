@@ -1,0 +1,21 @@
+.add-item-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--item-card-btn);
+  color: var(--item-card-text);
+  height: fit-content;
+  width: 112px;
+  padding: 8px;
+  transition: all 0.15s ease-in;
+}
+
+.add-item-btn:hover {
+  color: var(--item-card-btn-hover);
+  box-shadow: gray 4px 4px;
+}
+
+.add-item-btn:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px;
+}
