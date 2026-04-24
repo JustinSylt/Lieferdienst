@@ -1,25 +1,37 @@
 .basket-section {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 300px;
-  color: var(--basket-text);
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width: 300px;
+	color: var(--basket-text);
 }
 
 .basket {
-  position: sticky;
-  top: 32px;
-  padding: 8px;
-  border-radius: 12px 0px 0px 12px;
-  height: 600px;
-  width: 100%;
-  background-color: var(--basket-bg);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: sticky;
+	top: 32px;
+	padding: 8px;
+	border-radius: 12px 0px 0px 12px;
+	min-height: 600px;
+	width: 100%;
+	background-color: var(--basket-bg);
+}
+
+.basket-items {
+	padding-top: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	flex-grow: 1;
 }
 
 /* Ab 700px Breite auf responsive basket aendern */
 
 @media (max-width: 700px) {
-  .basket-section {
-    display: none;
-  }
+	.basket-section {
+		display: none;
+	}
 }

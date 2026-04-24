@@ -2,10 +2,10 @@ function init() {
 	renderChickenSliders();
 	renderBucketsAndBoxes();
 	renderSidesAndDips();
+	renderBasketContent();
 }
 
 // constants
-
 const CHICKEN_SLIDER_ARR = restaurantJFC.menu['Chicken Sliders'];
 const BUCKETS_AND_BOXES_ARR = restaurantJFC.menu['Buckets & Boxes'];
 const SIDES_AND_DIPS_ARR = restaurantJFC.menu['Sides & Dips'];
@@ -51,4 +51,30 @@ function renderSidesAndDips() {
 
 		sidesAndDipsRef.innerHTML += sidesAndDipsTemplate;
 	}
+}
+
+// render basket content
+function renderBasketContent() {
+	let itemsInBaskets = calculateBasketItems();
+	let basketItemsRef = document.getElementById('basket-items');
+
+	if (itemsInBaskets == 0) {
+		basketItemsRef.innerHTML = '';
+		basketItemsRef.innerHTML += renderEmptyBasketTemplate();
+	} else {
+	}
+}
+
+// calculate basket count
+function calculateBasketItems() {
+	let basketCount = 0;
+	const categories = Object.keys(restaurantJFC.menu);
+
+	for (let i = 0; i < categories.length; i++) {
+		const items = restaurantJFC.menu[categories[i]];
+		for (let j = 0; j < items.length; j++) {
+			basketCount += items[j].count;
+		}
+	}
+	return basketCount;
 }

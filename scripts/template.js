@@ -1,5 +1,5 @@
 function renderMenuItemsTemplate(title, description, price) {
-  return `<div class="item-card">
+	return `<div class="item-card">
               <div class="item-description">
                 <h3>${title}</h3>
                 <p>
@@ -11,4 +11,9 @@ function renderMenuItemsTemplate(title, description, price) {
                 <button class="add-item-btn">Add to basket</button>
               </div>
           </div>`;
+}
+
+function renderEmptyBasketTemplate() {
+	return `<p>Seems empty in here...</p>
+          <p>Add something to your Basket!</p>`;
 }
