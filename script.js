@@ -10,6 +10,7 @@ const CHICKEN_SLIDER_ARR = restaurantJFC.menu['Chicken Sliders'];
 const BUCKETS_AND_BOXES_ARR = restaurantJFC.menu['Buckets & Boxes'];
 const SIDES_AND_DIPS_ARR = restaurantJFC.menu['Sides & Dips'];
 
+// render all Chicken Sliders from db.js
 function renderChickenSliders() {
 	let chickenSliderRef = document.getElementById('chicken-slider');
 
@@ -23,6 +24,7 @@ function renderChickenSliders() {
 	}
 }
 
+// render all Buckets and Boxes from db.js
 function renderBucketsAndBoxes() {
 	let bucketsAndBoxesRef = document.getElementById('buckets-and-boxes');
 
@@ -36,6 +38,7 @@ function renderBucketsAndBoxes() {
 	}
 }
 
+// render all Sides and Dips from db.js
 function renderSidesAndDips() {
 	let sidesAndDipsRef = document.getElementById('sides-and-dips');
 
