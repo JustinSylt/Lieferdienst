@@ -17,3 +17,13 @@ function renderEmptyBasketTemplate() {
   return `<p>Seems empty in here...</p>
           <p>Add something to your Basket!</p>`;
 }
+
+function renderBasketItemTemplate(item) {
+  return `
+    <div class="basket-item">
+      <span>${item.title}</span>
+      <span>x${item.count}</span>
+      <span>${(item.price * item.count).toFixed(2)}€</span>
+    </div>
+  `;
+}

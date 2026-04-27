@@ -5,6 +5,9 @@ function init() {
   renderBasketContent();
 }
 
+// basket
+let basketContent = [];
+
 // constants
 const CHICKEN_SLIDER_ARR = restaurantJFC.menu['Chicken Sliders'];
 const BUCKETS_AND_BOXES_ARR = restaurantJFC.menu['Buckets & Boxes'];
@@ -58,13 +61,15 @@ function renderSidesAndDips() {
 
 // render basket content
 function renderBasketContent() {
-  let itemsInBaskets = calculateBasketItems();
   let basketItemsRef = document.getElementById('basket-items');
-
-  if (itemsInBaskets == 0) {
-    basketItemsRef.innerHTML = '';
-    basketItemsRef.innerHTML += renderEmptyBasketTemplate();
-  } else {
+  if (basketContent.length === 0) {
+    basketItemsRef.innerHTML = renderEmptyBasketTemplate();
+    return;
+  }
+  // render everything from basketContent array
+  basketItemsRef.innerHTML = '';
+  for (let i = 0; i < basketContent.length; i++) {
+    basketItemsRef.innerHTML += renderBasketItemTemplate(basketContent[i]);
   }
 }
 
@@ -82,10 +87,22 @@ function calculateBasketItems() {
   return basketCount;
 }
 
-// Increment counter in object
-
+// get clicked item and increment count + 1
 function getItemFromDb(itemID) {
   let allItems = Object.values(restaurantJFC.menu).flat();
   let item = allItems.find((item) => item.itemID === itemID);
-  console.log(item);
+  if (item) {
+    item.count++;
+  }
+  addItemToBasket(item);
+}
+
+// add item to basket
+function addItemToBasket(item) {
+  if (!basketContent.includes(item)) {
+    basketContent.push(item);
+  }
+  console.log(basketContent);
+
+  renderBasketContent(item);
 }
